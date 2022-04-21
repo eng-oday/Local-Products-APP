@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCellCollectionViewCell" id="gTV-IL-0wX" customClass="ImageCellCollectionViewCell" customModule="Skill_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="84" height="81"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-55-t7g">
+                        <rect key="frame" x="0.0" y="0.0" width="84" height="81"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElV-IL-pAE">
+                                <rect key="frame" x="5" y="6" width="72" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhO-Lw-vRh">
+                                        <rect key="frame" x="53" y="-3" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="NU6-PO-nRo"/>
+                                            <constraint firstAttribute="height" constant="20" id="eMb-lw-yhM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="deleteImage"/>
+                                        <connections>
+                                            <action selector="deleteButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Nxc-wK-OP9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NhO-Lw-vRh" firstAttribute="top" secondItem="ElV-IL-pAE" secondAttribute="top" constant="-3" id="2qN-km-D9A"/>
+                                    <constraint firstAttribute="trailing" secondItem="NhO-Lw-vRh" secondAttribute="trailing" constant="-1" id="XYq-LG-NWB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ElV-IL-pAE" secondAttribute="trailing" constant="7" id="0AL-jJ-fW5"/>
+                            <constraint firstItem="ElV-IL-pAE" firstAttribute="leading" secondItem="LDP-55-t7g" secondAttribute="leading" constant="5" id="9ua-A4-G1B"/>
+                            <constraint firstItem="ElV-IL-pAE" firstAttribute="top" secondItem="LDP-55-t7g" secondAttribute="top" constant="6" id="HaO-jd-AS9"/>
+                            <constraint firstAttribute="bottom" secondItem="ElV-IL-pAE" secondAttribute="bottom" constant="5" id="yKW-gp-RuH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="LDP-55-t7g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cxe-2J-zUH"/>
+                <constraint firstAttribute="trailing" secondItem="LDP-55-t7g" secondAttribute="trailing" id="RVM-My-21L"/>
+                <constraint firstItem="LDP-55-t7g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XL6-HC-Yj4"/>
+                <constraint firstAttribute="bottom" secondItem="LDP-55-t7g" secondAttribute="bottom" id="caT-wP-Luv"/>
+            </constraints>
+            <size key="customSize" width="84" height="81"/>
+            <connections>
+                <outlet property="ContainerOfImageView" destination="ElV-IL-pAE" id="yXo-DA-Rha"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="16.40625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="deleteImage" width="25" height="25"/>
+    </resources>
+</document>
